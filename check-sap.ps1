@@ -1,4 +1,5 @@
-if ($PSVersionTable.PSVersion -le 2) {
+$Version = $PSVersionTable.PSVersion.Major
+if ($Version -le 4) {
     Write-Error -Message "Uzywana wersja Powershell jest zbyt przestarzala by uzyc tego skryptu. Zaktualizuj Powershella. Obecna wersja: " + $PSVersionTable.PSVersion
 }
 
